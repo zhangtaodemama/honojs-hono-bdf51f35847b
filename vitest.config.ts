@@ -7,8 +7,7 @@ export default defineConfig({
     coverage: {
       enabled: true,
       provider: 'v8',
-      reportsDirectory: './coverage/raw/default',
-      reporter: ['json', 'text', 'html'],
+      reporter: ['json'],
       exclude: [
         ...(configDefaults.coverage.exclude ?? []),
         'benchmarks',
